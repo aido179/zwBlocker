@@ -7,6 +7,7 @@ A chrome extension to find and notify the user of zero-width unicode characters 
 
 [Read my blog post about it.](https://medium.com/@aidobreen/hidden-text-fingerprints-and-how-to-avoid-them-d0103edd2ce4)
 
+![Gif of the extension in action](https://i.imgur.com/aBYsuiu.gif)
 
 >Copyright (c) 2016 Aidan Breen
 >
