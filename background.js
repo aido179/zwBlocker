@@ -47,7 +47,6 @@ chrome.notifications.onButtonClicked.addListener(function(notification, button){
   if(button==0){
     //show with emojis
     chrome.tabs.create({ url: 'tabUI.html' },function(tabs){
-      console.log(tabs);
     });
   }else if(button==1){
     //show safe version

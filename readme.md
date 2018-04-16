@@ -1,7 +1,11 @@
 
 
 # zwBlocker
-A chrome extension to find and notify the user of zero-width unicode characters that may be used to track, or identify users across services. 
+A chrome extension to find and notify the user of zero-width unicode characters that may be used to track, or identify users across services.
+
+[Install the extension from the chrome web store.](https://chrome.google.com/webstore/detail/zwblocker/halgnbpginjdhipahdncmimakhmdohob)
+
+[Read my blog post about it.](https://medium.com/@aidobreen/hidden-text-fingerprints-and-how-to-avoid-them-d0103edd2ce4)
 
 
 >Copyright (c) 2016 Aidan Breen

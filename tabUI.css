@@ -36,6 +36,10 @@ ol{
 li{
   margin-bottom:1em;
 }
+.popup-links{
+  text-align: center;
+  padding:1em;
+}
 .title{
   font-size: 2em;
 }
