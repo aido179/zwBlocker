@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "zwBlocker",
+  "description": "Find and notify the user of zero-width unicode characters.",
+  "version": "1.0.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Find zero-width characters."
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+   {
+     "matches": ["<all_urls>"],
+     "js": ["jquery.js", "contentScript.js"],
+     "run_at": "document_end"
+   }
+  ],
+  "web_accessible_resources": [
+    "injectedUI.css"
+  ],
+  "permissions": [
+          "tabs","activeTab","storage", "notifications"
+        ],
+
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+}

@@ -1,0 +1,10 @@
+body{
+  min-width: 220px;
+  padding:3em;
+}
+button{
+  width:100%;
+}
+#status{
+  height:1em;
+}

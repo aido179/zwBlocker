@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="tabUI.css">
+</head>
+<body>
+
+<div class="content">
+
+  <img src="logo.png"/>
+  <h1>zwBlocker</h1>
+  <p>Find zero-width characters</p>
+
+  <span class="title">Zero-width characters removed:</span>
+  <button id="btn-copy-clean">Copy</button>
+  <div contentEditable="true" id="clean" class="edit selected-clean"></div>
+
+  <span class="title">Zero-width characters replaced with 💀:</span>
+  <button id="btn-copy-emoji">Copy</button>
+  <div contentEditable="true" id="emoji" class="edit selected-emoji"></div>
+</div>
+
+
+
+<script src="jquery.js"></script>
+<script src="tabUI.js"></script>
+</body>
+</html>
