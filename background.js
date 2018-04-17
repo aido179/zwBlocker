@@ -54,3 +54,20 @@ chrome.notifications.onButtonClicked.addListener(function(notification, button){
     });
   }
 });
+
+
+/*
+  Show message when the extension is updated.
+*/
+
+chrome.runtime.onInstalled.addListener(function (details) {
+  try {
+    var thisVersion = chrome.runtime.getManifest().version;
+    if (details.reason == "update") {
+      chrome.tabs.create({ url: 'update.html' },function(tabs){
+      });
+    }
+  } catch(e) {
+    console.info("OnInstall Error - " + e);
+  }
+});
