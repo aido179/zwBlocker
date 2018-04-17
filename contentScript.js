@@ -1,11 +1,15 @@
 var totalCount = 0;
+var zwMatches = new RegExp("[\u200B-\u200D\uFEFF]","g");
 
 let walker = document.createTreeWalker(
                 document,
                 NodeFilter.SHOW_TEXT,
                 { acceptNode:
                   function(node) {
-                    if(testForZeroWidthCharacters(node.nodeValue)){
+                    if(  node.nodeType == Node.TEXT_NODE
+                      && node.parentNode.nodeName !== "SCRIPT"
+                      && node.nodeValue.match(zwMatches)
+                    ){
                       totalCount++;
                       return NodeFilter.FILTER_ACCEPT;
                     }
@@ -37,7 +41,7 @@ document.onselectionchange = function() {
   }
 };
 
-var zwMatches = /[\u200B-\u200D\uFEFF]/g;
+
 function testForZeroWidthCharacters(text){
   return text.match(zwMatches);
 }
