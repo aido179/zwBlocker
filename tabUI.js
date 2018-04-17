@@ -7,7 +7,6 @@ function restore_options() {
 }
 
 $(document).ready(function(){
-  console.log("ready");
   restore_options();
 });
 

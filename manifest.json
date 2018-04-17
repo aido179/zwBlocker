@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
 
   "name": "zwBlocker",
   "description": "Find and notify the user of zero-width unicode characters.",
@@ -25,5 +25,5 @@
           "tabs","activeTab","storage", "notifications"
         ],
 
-  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+  "content_security_policy": "object-src 'self'"
 }
